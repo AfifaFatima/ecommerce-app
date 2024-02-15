@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Topbar from "./Topbar";
-import BrandContact from "./BrandContact";
+import BrandContact from "../pages/BrandContact";
 function Navbar() {
     return (
         <Fragment>
@@ -25,7 +25,6 @@ function Navbar() {
                                 <Link to="/feature" className="dropdown-item">Feature</Link>
                                 <Link to="/team" className="dropdown-item">Our Team</Link>
                                 <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
-                                <a href="404.html" className="dropdown-item">404 Page</a>
                             </div>
                         </div>
                         <Link to="/contact" className="nav-item nav-link" >Contact Us</Link>

@@ -1,17 +1,18 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function Projects() {
     return (
         <Fragment>
-            <Navbar />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: ' 600px' }}>
                         <h6 className="section-title bg-white text-center text-primary px-3">Our Projects</h6>
                         <h1 className="display-6 mb-4">Learn More About Our Complete Projects</h1>
                     </div>
+                    
                     <div className="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                        
                         <div className="project-item border rounded h-100 p-4" data-dot="01">
                             <div className="position-relative mb-4">
                                 <img className="img-fluid rounded" src="assets/img/project-1.jpg" alt="" />
@@ -95,7 +96,6 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
     )
 }

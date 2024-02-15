@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <Fragment>
@@ -19,11 +20,11 @@ function Footer() {
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <h5 className="text-light mb-4">Quick Links</h5>
-                            <a className="btn btn-link" href="">About Us</a>
-                            <a className="btn btn-link" href="">Contact Us</a>
-                            <a className="btn btn-link" href="">Our Services</a>
-                            <a className="btn btn-link" href="">Terms & Condition</a>
-                            <a className="btn btn-link" href="">Support</a>
+                            <Link className="btn btn-link" to="/about">About Us</Link>
+                            <Link className="btn btn-link" to="/contact">Contact Us</Link>
+                            <Link className="btn btn-link" to="/service">Our Services</Link>
+                            <Link className="btn btn-link" to="">Terms & Condition</Link>
+                            <Link className="btn btn-link" to="">Support</Link>
                         </div>
                         <div className="col-lg-3 col-md-6">
                             <h5 className="text-light mb-4">Gallery</h5>

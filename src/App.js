@@ -9,11 +9,15 @@ import Testimonial from './pages/Testimonial';
 import Feature from './pages/Feature';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
+  
       <Router>
+      <Navbar />
         <Routes>
           <Route path='/' element = {<Home />} />
           <Route path='/service' element={<Services /> } />
@@ -24,6 +28,7 @@ function App() {
           <Route path='/contact' element={<Contact /> } />
           <Route path='/about' element={<About /> } />
         </Routes>
+        <Footer />
       </Router>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

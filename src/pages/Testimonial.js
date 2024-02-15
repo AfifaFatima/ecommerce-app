@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function Testimonial() {
     return (
         <Fragment>
-            <Navbar />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style={{ maxWidth: '600px' }}>
@@ -55,7 +54,6 @@ function Testimonial() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
     )
 }

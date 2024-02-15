@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function About() {
     return (
         <Fragment>
-            <Navbar />
+            
             <div class="container-xxl py-5">
                 <div class="container">
                     <div class="row g-5">
@@ -32,7 +32,6 @@ function About() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
     )
 }

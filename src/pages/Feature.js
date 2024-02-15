@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import Topbar from "./Topbar";
+import Topbar from "../components/Topbar";
 import BrandContact from "./BrandContact";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function Feature() {
     return (
         <Fragment>
-            <Navbar />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="row g-5">
@@ -60,7 +59,6 @@ function Feature() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </Fragment>
     )
 }
